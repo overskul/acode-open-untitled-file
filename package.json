@@ -1,0 +1,13 @@
+{
+  "acode-plugin": "plugin.config.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "archiver": "^8.0.0",
+    "esbuild": "^0.28.1"
+  },
+  "scripts": {
+    "dev": "node build/esbuild.config.js -D",
+    "build": "node build/esbuild.config.js"
+  }
+}
