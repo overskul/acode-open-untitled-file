@@ -1,7 +1,5 @@
 import style from "@/style";
-
-const C           = acode.require("config");
-const appSettings = acode.require("settings");
+const C      = acode.require("config");
 
 const EVENTS = [
   "switch-file",
@@ -37,10 +35,7 @@ const COMMANDS  = [
 ];
 
 export default class OpenUntitledFile {
-  constructor() { /* plugin constructor */ }
-
   async onInit(baseUrl, $page, { ctx, firstInit, cacheFileUrl, cacheFile }) {
-    // plugin initialisation
     for (const event of EVENTS) {
       editorManager.on(event, this.onCheckState);
     }
@@ -53,12 +48,10 @@ export default class OpenUntitledFile {
   }
 
   async onDestroy() {
-    // plugin clean up
     await this.onDisable();
   }
 
   async onDisable() {
-    // plugin disabled
     for (const event of EVENTS) {
       editorManager.off(event, this.onCheckState);
     }
@@ -66,8 +59,8 @@ export default class OpenUntitledFile {
     const { commands } = editorManager.editor;
     for (const cmd of COMMANDS) commands.removeCommand(cmd.name);
 
-    this.$style.remove();
-    this.$button.remove();
+    this.$style?.remove();
+    this.$button?.remove();
   }
 
   get $style() {

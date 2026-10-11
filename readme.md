@@ -1,7 +1,19 @@
-# Open Untitled File ✏️
+<div align="center">
+  <img 
+    src="https://raw.githubusercontent.com/overskul/acode-open-untitled-file/refs/heads/main/assets/plugin-icon.png"
+    height="64px"
+    width="64px"
+    style="border-radius: 16px"
+  />
+</div>
 
 > [!WARNING]
-> Currently, the plugin doesn't support multiple panes and may broke (not tested).
+> **Currently, the plugin doesn't support multiple panes and may broke (not tested).**
+
+> [!NOTE]
+> **The Plugin now available open-sourced on [GitHub](https://acode.app/plugin/x.util.o.u.t.f)**
+
+# Open Untitled File ✏️
 
 A utility plugin for open untitled file, even if open file list is having files.
 
@@ -24,4 +36,4 @@ This plugin under **MIT** license.
 
 ---
 
-<div align="center">Leave a ⭐ on GitHub, if you found it helpful.</div>
+<div align="center">Leave a ⭐ on <a href="https://acode.app/plugin/x.util.o.u.t.f">GitHub</a>, if you found it helpful.</div>

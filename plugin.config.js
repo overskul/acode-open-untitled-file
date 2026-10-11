@@ -14,7 +14,7 @@ export const config = {
   plugin: {
     id: "x.util.o.u.t.f",
     name: "Open Untitled File",
-    version: "0.2.6",
+    version: "0.3.0",
     license: "MIT",
     icon: "assets/plugin-icon.png",
     readme: "readme.md",
