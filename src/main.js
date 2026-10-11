@@ -1,7 +1,7 @@
-import Plugin from "@/[Plugin]";
+import OpenUntitledFile from "@/OpenUntitledFile";
 
 if (window.acode) {
-  const plugin = new Plugin();
+  const plugin = new OpenUntitledFile();
   acode.setPluginInit(__PLUGIN__.id, plugin.onInit.bind(plugin), plugin.pageSettings);
   acode.setPluginUnmount(__PLUGIN__.id, async () => {
     const { pluginsDisabled } = acode.require("Settings").value;

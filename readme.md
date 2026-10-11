@@ -1,78 +1,27 @@
-# Acode Plugin Template
+# Open Untitled File ✏️
 
-A javaScript plugin template for [Acode Editor](https://acode.app).
+> [!WARNING]
+> Currently, the plugin doesn't support multiple panes and may broke (not tested).
 
-- Lightweight building with esbuild.
-- Validate your plugin configuring.
-- Supports JSX.
+A utility plugin for open untitled file, even if open file list is having files.
 
-## Installation
+Simple, Stable and useful :)
 
-```bash
-npm install
-```
+## How Its Work ❓
 
-## Building
+the plugin add `(+)` button in the begining of the `open-file-list`, when you click it it will add a untitled file in list **if there's no one already opened**.
 
-**Build:**
-```bash
-npm run build
-```
+You can also open multiple *untitled* files or hide the button through these commands on Commands Pallete `(CTRL+SHIFT+P)`:
 
-**Dev:**
-```bash
-npm run dev
-```
+| Command                                       | Description                         | ID          |
+|-----------------------------------------------|-------------------------------------|-------------|
+| **Open new UntitledFile**                     | Creates a new *untitled* file       | outf:open   |
+| **Toggle OpenUntitledFile button visibility** | Show/Hide *OpenUntitledFile* button | outf:toggle |
 
-## Build Config
-The project uses a config (`build/BuildConfig`) to control how the plugin is built.
+## License 📜
 
-```JavaScript
-export default {
-  ENTRY: "src/main.js",
-  OUTPUT: "dist/main.js",
-  ZIP: "{id}-v{version}.acodeplugin",
-  PORT: 3030,
-  JSX: false,
-  GLOBAL: {}
-}
-```
-
-### Options
-> `ENTRY`
-> 
-> Main source file used as the build entry point.
-
-> `OUTPUT`
-> 
-> Path where the compiled output file will be written.
-
-> `ZIP`
-> 
-> Name of the final plugin archive.
-> You can use placeholders like: `{id}`, `{version}`, `{author.name}`.
-> **All supported placeholders from `plugin.json` file.**
-
-> `PORT`
-> 
-> Dev server port used by the build process.
-
-> `JSX`
-> 
-> Enables JSX support when set to **true**.
-
-> `GLOBAL`
-> 
-> Defines global variables that will be injected during build time.
-> **Example:**
-
-```JavaScript
-GLOBAL: {
-  __TEST__: JSON.stringify(10)
-}
-```
-- All passed values **must** be a `string`.
+This plugin under **MIT** license. 
 
 ---
 
-Enjoy :3
+<div align="center">Leave a ⭐ on GitHub, if you found it helpful.</div>

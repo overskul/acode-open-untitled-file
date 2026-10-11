@@ -51,7 +51,8 @@ const buildConfig = {
   },
   loader: {
     ".js": "jsx",
-    ".ts": "tsx"
+    ".ts": "tsx",
+    ".css": "text"
   },
   plugins: [
     (hasPlugin("JSX") ? JsxPlugin(config.build.entryFile) : dumpPlugin()),
